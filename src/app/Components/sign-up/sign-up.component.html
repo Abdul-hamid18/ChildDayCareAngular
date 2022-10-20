@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <h3>Sign Up</h3>
+ <hr>
+  <form [formGroup]="Signup" (ngSubmit)="submit()">
+    <label for="uname">Username:</label>
+    <input type="text" placeholder="Enter username" formControlName="uname">
+
+    <label for="password">Password:</label>
+    <input type="password"  placeholder="Enter Password" formControlName="psw">
+
+    <label for="confirmpassword">Confirm Password:</label>
+    <input type="password"  placeholder="Confirm Password" formControlName="psw_confirm">
+
+   
+  
+    <input type="submit" value="Sign Up" [routerLink]="['']">
+
+  </form>
+  <div style="text-align: center;">
+    <span>Already have an <a [routerLink]="['']">Account? LogIn here</a></span>
+  </div>
+</div>
+<router-outlet></router-outlet>

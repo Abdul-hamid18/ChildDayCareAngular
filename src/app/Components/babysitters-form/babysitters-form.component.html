@@ -1,0 +1,91 @@
+<form [formGroup] ="CreateBabysitter" (ngSubmit)="submit()" >
+
+    <div class="container-fluid">
+      <h1>Add New Babysitter</h1>
+      <hr>
+      <h2>Babysitters's Information</h2>
+  
+      <div class="container" style="background-color: #f1f1f1;">
+  
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label for="babysitterfname"><b>First Name:</b></label>
+            <input type="text" placeholder="Enter First Name" formControlName="f_Name" >
+          </div>
+        </div>
+  
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label for="babysitterlname"><b>Last Name:</b></label>
+            <input type="text" placeholder="Enter Last Name" formControlName="l_Name" >
+          </div>
+        </div>
+  
+      
+  
+        <div class="col-md-6 mb-4">
+          <div class="form-outline mb-4">
+            <label for="childgender"><b>Gender:</b></label> <br><br>
+            <label class="radio-inline">
+              <input type="radio"  name="chgender" value="Male" formControlName="gender" >Male
+            </label>
+            <label class="radio-inline">
+              <input type="radio"  name="chgender" value="Female" formControlName="gender"  >Female
+            </label>
+            <label class="radio-inline">
+              <input type="radio"  name="chgender" value="Other" formControlName="gender" >Other
+            </label>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+              <label for="parentemail"><b>Age:</b></label>
+              <input type="number" placeholder="Enter Age" formControlName="age"  >
+            </div>
+          </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+              <label for="parentaddress"><b>Address:</b></label>
+              <input type="text" placeholder="City, Country. " formControlName="address" >
+            </div>
+          </div>
+        
+    
+          
+
+          <div class="col-md-6 mb-4">
+            <div class="form-outline">
+              <label for="babysitterphone"><b>Phone:</b></label>
+              <input type="tel" placeholder="Enter Phone" formControlName="phone" >
+            </div>
+          </div>
+
+          <div class="col-md-2 mb-4" style="float: right;">
+            <div class="form-outline">
+              <button type="submit" class="btn btn-success"> Register</button>
+            </div>
+          </div>
+
+          <div class="col-md-2 mb-4" style="float: right;">
+            <div class="form-outline">
+              <button type="reset" class="btn btn-warning"> Clear All</button>
+            </div>
+          </div>
+
+          
+    
+          
+
+      </div>
+
+      
+  
+  
+   
+  
+    </div>
+  </form>
+  <router-outlet></router-outlet>
+  

@@ -1,0 +1,151 @@
+<form  (ngSubmit) = "onSubmit()"  >
+
+    <div class="container">
+      <h1>Update Enrollment</h1>
+      <hr>
+      <h2>Child's Information</h2>
+  
+      <div class="container" style="background-color: #f1f1f1;">
+  
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label for="childfname"><b>First Name:</b></label>
+            <input type="text" name="ch_Fname" placeholder="Enter First Name" 
+            [(ngModel)] = "enroll.ch_Fname"   >
+          </div>
+        </div>
+  
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label for="childlname"><b>Last Name:</b></label>
+            <input type="text" placeholder="Enter Last Name"
+            [(ngModel)] = "enroll.ch_Lname" name="ch_Lname" >
+          </div>
+        </div>
+  
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label for="enrollDate"><b>Enroll Date:</b></label>
+            <input type="date"  id="enroll_Date"
+            [(ngModel)] = "enroll.enroll_Date" name="enroll_Date" >
+          </div>
+        </div>
+  
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label for="childgender"><b>Gender:</b></label> <br><br>
+            <label class="radio-inline">
+              <input type="radio" value="Male"
+              [(ngModel)] = "enroll.ch_Gender" name="ch_Gender" >Male
+            </label>
+            <label class="radio-inline">
+              <input type="radio" value="Female" 
+              [(ngModel)] = "enroll.ch_Gender" name="ch_Gender">Female
+            </label>
+            <label class="radio-inline">
+              <input type="radio" value="Other" 
+              [(ngModel)] = "enroll.ch_Gender" name="ch_Gender">Other
+            </label>
+          </div>
+        </div>
+      </div>
+  
+      <h2>Parent/Guardian's Information</h2>
+  
+      <div class="container" style="background-color: #f1f1f1;">
+  
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label for="parentfname"><b>First Name:</b></label>
+            <input type="text" placeholder="Enter First Name" 
+            [(ngModel)] = "enroll.pr_Fname" name="pr_Fname">
+          </div>
+        </div>
+  
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label for="parentlname"><b>Last Name:</b></label>
+            <input type="text" placeholder="Enter Last Name" 
+            [(ngModel)] = "enroll.pr_Lname" name="pr_Lname" >
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label for="parentaddress"><b>Address:</b></label>
+            <input type="text" placeholder="City, Country. " 
+            [(ngModel)] = "enroll.address" name="address" >
+          </div>
+        </div>
+  
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label for="parentphone"><b>Phone:</b></label>
+            <input type="tel" placeholder="Enter Phone" 
+            [(ngModel)] = "enroll.phone" name="phone" >
+          </div>
+        </div>
+      
+  
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label for="parentgender"><b>Gender:</b></label> <br><br>
+            <label class="radio-inline">
+              <input type="radio" value="Male" checked 
+              [(ngModel)] = "enroll.pr_Gender" name="pr_Gender">Male
+            </label>
+            <label class="radio-inline">
+              <input type="radio" value="Female" 
+              [(ngModel)] = "enroll.pr_Gender" name="pr_Gender">Female
+            </label>
+            <label class="radio-inline">
+              <input type="radio" value="Other" 
+              [(ngModel)] = "enroll.pr_Gender" name="pr_Gender">Other
+            </label>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label for="parentemail"><b>Email:</b></label>
+            <input type="email" placeholder="email@example.com" 
+            [(ngModel)] = "enroll.email" name="email">
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label for="childlname"><b>Service Category:</b></label>
+            <select type="text" placeholder="Enter Last Name"
+            [(ngModel)] = "enroll.category" name="category">
+            <option *ngFor="let serve of services, let i = index">{{i+1}}. {{serve.name}}</option>
+            </select>
+          </div>
+        </div>
+
+
+        <div class="col-md-2 mb-4" style="float: right;">
+          <div class="form-outline">
+            <br>
+            <button type="submit" class="btn btn-success"> Update Enrollment</button>
+          </div>
+        </div>
+
+        <div class="col-md-2 mb-4" style="float: right;">
+          <div class="form-outline">
+            <br>
+            <button type="reset" class="btn btn-warning"> Clear All</button>
+          </div>
+        </div>
+
+
+
+      </div>
+
+  
+  
+  
+    </div>
+  </form>
+  <router-outlet></router-outlet>
+  

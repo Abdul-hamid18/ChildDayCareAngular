@@ -1,0 +1,56 @@
+<form (ngSubmit) = "onSubmit()"  >
+
+    <div class="container-fluid">
+      <h1>Update A Service</h1>
+      <hr>
+      <h2>Services's Information</h2>
+  
+      <div class="container" style="background-color: #f1f1f1;">
+  
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label for="ServiceName"><b>Service Name:</b></label>
+            <input type="text" placeholder="Enter Service Name" 
+            [(ngModel)]="service.name"  name="name">
+            <label for="ServiceStatus"><b>Service Status:</b></label> <br>
+            <label class="radio-inline">
+            <input type="radio" value="Active"
+            [(ngModel)]="service.status"  name="status" checked>Active 
+            </label>
+            <label class="radio-inline">
+              <input type="radio" value="In-Active" 
+              [(ngModel)]="service.status"  name="status">In-Active
+            </label>
+          </div>
+        </div>
+  
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label for="ServiceDescription"><b>Service Description:</b></label>
+            <textarea rows="5" cols="50" id="multiLineInput" 
+            [(ngModel)]="service.description"  name="description"></textarea>
+          </div>
+        </div>
+
+        <div class="col-md-2 mb-4" style="float: right ;">
+          <div class="form-outline">
+            <button type="submit" class="btn btn-success">Update</button>
+          </div>
+        </div>
+
+
+        <div class="col-md-2 mb-4" style="float: right ;">
+          <div class="form-outline">
+            <button type="reset" class="btn btn-warning"> Clear All</button>
+          </div>
+        </div>
+
+
+      </div>
+
+  
+  
+    </div>
+  </form>
+  <router-outlet></router-outlet>
+  

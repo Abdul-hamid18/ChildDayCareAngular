@@ -1,0 +1,45 @@
+<div class="container-fluid">
+<div class="col-md-12">
+  <div class="well" id="well1">
+     <span class="logostart"> WELCOME TO
+      <span class="logobegin"> <strong>CHILD </strong></span>
+      <span class="logoend" ><strong> DAYCARE</strong>  </span>
+      WEB APPLICATION
+     </span>
+    
+  
+    <hr>
+    <span style="font-size: 25px;"><i class="fa fa-dashboard"></i> <strong>Dashboard</strong></span>
+    <hr>
+    <p>.......</p>
+    <div class="row">
+      <a [routerLink]="['/navbar/services/services-list']">
+      <div class="col-sm-4">
+        <div class="well" id="well2" >
+          <h4>Services List<i class="fa fa-gears"></i></h4>
+          <hr>
+          <p>{{services.length}}</p>
+        </div>
+      </div></a>
+      <a [routerLink]="['/navbar/babysitters/babysitters-list']">
+      <div class="col-sm-4" >
+        <div class="well" id="well3" >
+          <h4>Babysitters List   <i class="fa fa-users"></i></h4>
+          <hr>
+          <p>{{babysitter.length}}</p>
+        </div>
+      </div></a>
+      <a [routerLink]="['/navbar/enrollment/enroll-list']">
+      <div class="col-sm-4" >
+        <div class="well" id="well4">
+          <h4>Pending Enrollments <i class="fa fa-id-card-o"></i></h4>
+          
+          <hr>
+          <p>{{enrollment.length}}</p>
+        </div>
+      </div></a>
+    </div>
+  </div>
+  
+</div>
+<router-outlet></router-outlet>

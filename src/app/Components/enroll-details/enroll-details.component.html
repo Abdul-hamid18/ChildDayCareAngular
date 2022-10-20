@@ -1,0 +1,62 @@
+<div class="container" id="content">
+    <div>
+    <h2>{{enrollment.ch_Fname}}'s Enrollment Details</h2>
+    <hr>
+    </div>
+
+    <div class="card text-center">
+        <div class="card-header">
+            <h2 class="card-title">Child Details</h2>
+        </div>
+        <div class="card-body">
+          
+          <div>
+            <div class="lbl">
+                <label> <b> Child Name: </b></label> {{enrollment.ch_Fname}} {{enrollment.ch_Lname}}
+            </div>
+            <div class="lbl">
+                <label> <b> Child Gender: </b></label> {{enrollment.ch_Gender}}
+            </div>
+
+            <h2 class="card-title">Parent Details</h2>
+            <div class="lbl">
+                <label> <b> Parent Name: </b></label> {{enrollment.pr_Fname}} {{enrollment.pr_Lname}}
+            </div>
+            <div class="lbl">
+                <label> <b> Parent Gender: </b></label> {{enrollment.pr_Gender}}
+            </div>
+            <h2 class="card-title">Contacts Details</h2>
+            <div class="lbl">
+                <label> <b> Address: </b></label> {{enrollment.address}}
+            </div>
+            <div class="lbl">
+                <label> <b> Email: </b></label> {{enrollment.email}}
+            </div>
+            <div class="lbl">
+                <label> <b> Phone: </b></label> {{enrollment.phone}}
+            </div>
+            <h2 class="card-title">Enrollment Details</h2>
+            <div class="lbl">
+                <label> <b> Enroll Date: </b></label> {{enrollment.enroll_Date}}
+            </div>
+        
+            <div class="lbl">
+                <label> <b> Chosen Service: </b></label> {{enrollment.category}}
+            </div>
+        </div>
+          
+        </div>
+        <div class="card-footer text-muted">
+            <button
+            styleSheetFile="../../../assets/css/printdetails.css" 
+            printTitle= "{{enrollment.ch_Fname}}'s Details" 
+            printSectionId="content"
+            ngxPrint 
+            class="btn btn-success btn-lg"
+            > Print Details</button>
+        </div>
+      </div>
+    
+      
+</div>
+

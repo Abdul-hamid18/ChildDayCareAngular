@@ -1,0 +1,75 @@
+.container-fluid{
+  padding: 12pt;
+}
+
+#well1{
+  border-top: 8px solid blue;
+}
+
+#well1 i{
+  font-size:30px; 
+  float:left;
+  color: blue;
+  padding-right: 10px;
+}
+
+#well2{
+  font-size: 25px;
+  border-left: 8px solid orangered;
+}
+#well2 i{
+  font-size:36px; 
+  float:right;
+  color: orangered;
+}
+#well2 hr{
+  margin: 10px;
+  color: orangered;
+  
+}
+
+#well3{
+  font-size: 25px;
+  border-left: 8px solid purple;
+}
+#well3 i{
+  font-size:36px; 
+  float:right;
+  color: purple;
+}
+#well3 hr{
+  margin: 10px;
+  color: purple;
+}
+
+#well4{
+  font-size: 25px;
+  border-left: 8px solid darkcyan;
+}
+#well4 i{
+  font-size:36px; 
+  float:right;
+  color: darkcyan;
+}
+#well4 hr{
+  margin: 10px;
+  color: darkcyan;
+}
+.logobegin{
+  font-family:fantasy; 
+  color:brown; 
+  font-size:50px;
+}
+.logoend{
+  font-family:fantasy; 
+  color:darkcyan; 
+  font-size:50px;
+}
+.logostart{
+  font-family:fantasy; 
+  color: darkblue; 
+  font-size:50px;
+}
+h4{
+  font-size: 20px;
+}

@@ -1,0 +1,99 @@
+<form  (ngSubmit) = "onSubmit()">
+
+    <div class="container-fluid">
+      <h1>Update Babysitter</h1>
+      <hr>
+      <h2>Babysitters's Information</h2>
+  
+      <div class="container" style="background-color: #f1f1f1;">
+  
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label for="babysitterfname"><b>First Name:</b></label>
+            <input type="text" placeholder="Enter First Name"
+            [(ngModel)]="babysitter.f_Name" name="f_Name" >
+          </div>
+        </div>
+  
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label for="babysitterlname"><b>Last Name:</b></label>
+            <input type="text" placeholder="Enter Last Name" 
+            [(ngModel)]="babysitter.l_Name" name="l_Name"  >
+          </div>
+        </div>
+  
+      
+  
+        <div class="col-md-6 mb-4">
+          <div class="form-outline mb-4">
+            <label for="childgender"><b>Gender:</b></label> <br><br>
+            <label class="radio-inline">
+              <input type="radio" value="Male" 
+              [(ngModel)]="babysitter.gender" name="gender"  >Male
+            </label>
+            <label class="radio-inline">
+              <input type="radio" value="Female" 
+              [(ngModel)]="babysitter.gender" name="gender"  >Female
+            </label>
+            <label class="radio-inline">
+              <input type="radio"value="Other" 
+              [(ngModel)]="babysitter.gender" name="gender"  >Other
+            </label>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+              <label for="parentemail"><b>Age:</b></label>
+              <input type="number" placeholder="Enter Age" 
+              [(ngModel)]="babysitter.age" name="age"    >
+            </div>
+          </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="form-outline">
+              <label for="parentaddress"><b>Address:</b></label>
+              <input type="text" placeholder="City, Country. "
+              [(ngModel)]="babysitter.address" name="address"   >
+            </div>
+          </div>
+        
+    
+          
+
+          <div class="col-md-6 mb-4">
+            <div class="form-outline">
+              <label for="babysitterphone"><b>Phone:</b></label>
+              <input type="tel" placeholder="Enter Phone" 
+              [(ngModel)]="babysitter.phone" name="phone"   >
+            </div>
+          </div>
+
+          <div class="col-md-2 mb-4" style="float: right;">
+            <div class="form-outline">
+              <button type="submit" class="btn btn-success">Update</button>
+            </div>
+          </div>
+
+          <div class="col-md-2 mb-4" style="float: right;">
+            <div class="form-outline">
+              <button type="reset" class="btn btn-warning"> Clear All</button>
+            </div>
+          </div>
+
+          
+    
+          
+
+      </div>
+
+      
+  
+  
+   
+  
+    </div>
+  </form>
+  <router-outlet></router-outlet>
+  

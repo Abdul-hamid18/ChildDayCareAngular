@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <h3>Log In!</h3>
+  <hr>
+  <form>
+    <label for="uname">Username:</label>
+    <input type="text" placeholder="Enter username" >
+    
+
+    <label for="password">Password:</label>
+    <input type="password"  placeholder="Enter Password" >
+
+    <button type="submit" class="btn btn-primary" [routerLink]="['/navbar/dashboard']">Log In</button>
+  
+
+  </form>
+  <div style="text-align: center;">
+    <span class="psw">Don't have an <a [routerLink]="['signup']">Account? SignUp here</a></span>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+
+
+
+
+
+    

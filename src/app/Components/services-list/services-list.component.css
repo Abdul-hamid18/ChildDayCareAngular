@@ -1,0 +1,71 @@
+.col-sm-3{
+  padding-bottom: 15px;
+}
+
+.container {
+  font-family: Arial;
+  max-width: fit-content;
+  min-height: 280px;
+  margin: 0 auto;
+  border-radius: 3px;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Style the counter cards */
+.card {
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border: 1px solid #eee;
+  flex: 1;
+  box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  transition: transform .1s;
+}
+
+.card h2 {
+  margin: 0;
+  background-color: deepskyblue;
+  padding: 8px;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 7px 7px 7px 7px;
+}
+
+.card p {
+  margin: 0;
+  padding: 8px;
+  font-size: medium;
+ 
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+button{
+  padding-inline: 12px;
+  margin: 6px;
+}
+
+
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+

@@ -1,0 +1,92 @@
+.lbl{
+    padding: 10px;
+    padding-left: 30px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.col-md-3{
+    padding-bottom: 15px;
+  }
+  
+  .container {
+    font-family: Arial;
+    max-width: fit-content;
+    min-height: 450px;
+    min-width: 280px;
+    margin: 0 auto;
+    border-radius: 3px;
+    padding: 0;
+    padding-bottom: 12px;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border: 1px solid #eee;
+    flex: 1;
+    box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    min-width: 550px;
+  }
+  
+  .card h2 {
+    margin: 0;
+    background-color: darkcyan;
+    padding: 8px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 7px 7px 7px 7px;
+  }
+  
+  .card p {
+    margin: 0;
+    padding: 8px;
+    font-size: medium;
+  }
+  
+  .card:last-child {
+    margin-right: 0;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  button{
+    padding-inline: 12px;
+    margin: 6px;
+  }
+  
+  
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+  
+    img{
+        border-radius: 30%;
+        max-width: fit-content;
+        padding-bottom: 10px;
+        flex:1;
+    }
+    span{
+      font-weight: bold;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+    }

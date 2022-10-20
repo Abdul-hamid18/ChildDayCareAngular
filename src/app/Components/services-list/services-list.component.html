@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-lg-12">
+    <h2>Services List</h2>
+    <hr>
+  <div class="col-sm-3" *ngFor="let serv of services, let i = index">
+    <div class="container flex">
+      <div class="card">
+        <div class="card-body">
+          <h2>{{i+1}}. {{serv.name}}</h2>
+          <p>{{serv.description}}</p>
+          <p> <strong>{{serv.status}}</strong> </p>
+          <button class="btn btn-success" (click)="updateService(serv.id)">Update</button>
+          <button class="btn btn-danger" (click) ="deleteService(serv.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+  <router-outlet></router-outlet>
